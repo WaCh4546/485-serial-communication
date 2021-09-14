@@ -4,34 +4,17 @@
 模拟工业网络，设计通信协议并实现网络内四台设备之间的通讯。
 
 #### 软件架构
-软件架构说明
+网络内四台设备分别为一台主机，三台从机。
+
+主机为监控计算机，采用python语言，pyqt模块编写，在windows下运行。
+
+三台从机分别为控制、检测、模型计算机。均用三台STM32单片机实现，程序用C语言编写。
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  该软件模拟一个简单的工业网络中各设备之间的通讯及工作过程。模型计算机设置为一个二阶系统模型模拟现场设备。检测设备对模型计算机输出的信号进行获取并反馈到控制计算机，由控制计算机根据反馈产生新的输出控制模型计算机。
+3.  网络采用主从通信，从机之间不能直接通讯，必须经过主机即监控计算机。
+3.  监控计算机记录所有从机返回的数据并按时间生成对应的xls文件。使用历史数据浏览器可对这些数据的折线图进行查看
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
