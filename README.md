@@ -20,5 +20,5 @@
 
 3. 监控计算机记录所有从机返回的数据并按时间生成对应的xls文件。使用历史数据浏览器可对这些数据的折线图进行查看
 
-   
+![实物图.jpg](https://github.com/WaCh4546/485-serial-communication/blob/master/%E5%AE%9E%E7%89%A9%E5%9B%BE.jpg)
 
